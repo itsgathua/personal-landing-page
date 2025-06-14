@@ -1,6 +1,87 @@
 body {
-  font-family: "Edu SA Hand", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    background-color: antiquewhite;
+    font-family: "Edu SA Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(197, 255, 235);
+    z-index: 1000;
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.logo a{
+    color: rgb(69, 69, 69);
+    transition: 0.5s ease;
+    display: inline-block
+}
+
+.logo a:hover {
+    color: rgb(227, 46, 46);
+    transform: translateY(-0.1rem);
+}
+
+.nav-links a {
+    padding-right: 25px;
+    color: black;
+    transition: 0.5s ease;
+    display: inline-block
+}
+
+.nav-links a:hover{
+    color: rgb(227, 46, 46);
+    transform: translateY(-0.2rem);
+}
+
+main {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.introduction {
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 15px;
+    background-color: rgb(247, 211, 165);
+    box-shadow: 0 2px 4px(0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.short-intro {
+    align-items: center;
+    text-align: center;
+    padding-left: 150px;
 }
