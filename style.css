@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(197, 255, 235);
+    background-color: rgb(247, 211, 165);
     z-index: 1000;
     height: 50px;
 }
@@ -27,7 +27,7 @@ body {
     font-size: 24px;
     margin-left: 15px;
     text-decoration: none;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .logo a{
@@ -38,13 +38,13 @@ body {
 
 .logo a:hover {
     color: rgb(227, 46, 46);
-    transform: translateY(-0.1rem);
+    transform: translateY(-0.2rem);
 }
 
 .nav-links a {
     padding-right: 25px;
     color: black;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     display: inline-block
 }
 
@@ -65,12 +65,12 @@ main {
     justify-content: space-between;
     margin: 15px;
     background-color: rgb(247, 211, 165);
-    box-shadow: 0 2px 4px(0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 10px;
     text-align: center;
 }
 
-img {
+.profile-pic {
     width: 300px;
     height: 350px;
     border-radius: 8px;
@@ -84,4 +84,67 @@ img {
     align-items: center;
     text-align: center;
     padding-left: 150px;
+    padding-top: 10%;
+}
+
+.hobby-containers {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.hobby {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    height: 650px;
+    width: 450px;
+    background-color: rgb(247, 211, 165);
+    margin: 15px;
+}
+
+.game-img {
+     width: 300px;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(247, 211, 165);
+    z-index: 1000;
+    height: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    color: black;
+}
+
+footer a:hover{
+    color: red;
+    transform: translateY(-0.1rem);
+}
+
+@media (max-width:768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
 }
